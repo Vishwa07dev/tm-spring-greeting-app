@@ -1,8 +1,11 @@
 package com.upgrad.greeting;
 
+import com.upgrad.greeting.services.GreetingService;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        GreetingService greetingService = new GreetingService();
+        greetingService.greet("John");
     }
 }
