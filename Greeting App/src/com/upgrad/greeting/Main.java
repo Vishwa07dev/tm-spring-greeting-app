@@ -1,11 +1,13 @@
 package com.upgrad.greeting;
 
+import com.upgrad.greeting.factories.GreetingServiceFactory;
 import com.upgrad.greeting.services.GreetingService;
 
 public class Main {
 
     public static void main(String[] args) {
-        GreetingService greetingService = new GreetingService();
+        GreetingServiceFactory greetingServiceFactory = new GreetingServiceFactory();
+        GreetingService greetingService = greetingServiceFactory.getGreetingService("english");
         greetingService.greet("John");
     }
 }
