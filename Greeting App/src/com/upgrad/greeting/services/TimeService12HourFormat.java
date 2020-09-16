@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-@Component
+//@Component
 public class TimeService12HourFormat implements TimeService {
     @Override
     public int getCurrentTime() {
